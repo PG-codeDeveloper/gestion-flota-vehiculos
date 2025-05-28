@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#001F3F"
+    android:padding="16dp"
+    tools:context=".ui.main.MainActivity">
+
+        <!-- Título -->
+    <TextView
+        android:id="@+id/tituloMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catálogo de Vehículos"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+      <!-- Lista de vehículos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMisReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis Reservas"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#FF9800"
+        app:cornerRadius="24dp"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/textCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quieres salir? Cierra sesión aquí"
+        android:textColor="#FF9800"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
+
+
+</LinearLayout>

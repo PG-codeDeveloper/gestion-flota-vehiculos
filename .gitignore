@@ -1,3 +1,16 @@
+# Archivos comunes a ignorar
+*.iml
+.gradle
+/local.properties
+/.idea/
+/.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Spring Boot/Backend
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -12,12 +25,6 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
 
 ### NetBeans ###
 /nbproject/private/

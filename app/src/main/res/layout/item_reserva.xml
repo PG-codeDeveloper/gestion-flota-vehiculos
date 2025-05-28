@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Datos de la reserva -->
+        <LinearLayout
+            android:id="@+id/llDatosReserva"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/btnEliminar"
+            android:layout_toLeftOf="@id/btnEliminar">
+
+            <TextView
+                android:id="@+id/textVehiculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehículo: Marca Modelo"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario: Nombre completo"
+                android:textColor="#444444"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textMotivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo: motivo de la reserva"
+                android:textColor="#444444"
+                android:layout_marginTop="2dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha: yyyy-MM-dd"
+                android:textColor="#888888"
+                android:layout_marginTop="2dp"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Botón Eliminar reserva -->
+        <ImageButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Eliminar reserva"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="#FF9800" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
