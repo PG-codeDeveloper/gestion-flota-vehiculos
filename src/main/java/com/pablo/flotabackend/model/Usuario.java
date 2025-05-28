@@ -17,14 +17,18 @@ public class Usuario {
     @Column(unique = true, nullable = false)
     private String email;
 
+    @Column(nullable = false)
+    private String password; //
+
     @Column(name = "fecha_registro")
     private ZonedDateTime fechaRegistro = ZonedDateTime.now();
 
-    // Constructor vacío
+    @Column(nullable = false)
+    private String rol;
+
     public Usuario() {}
 
-    // Getters y Setters
-
+    // Getters y setters
     public Long getId() {
         return id;
     }
@@ -45,11 +49,27 @@ public class Usuario {
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public ZonedDateTime getFechaRegistro() {
         return fechaRegistro;
     }
 
     public void setFechaRegistro(ZonedDateTime fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 }
